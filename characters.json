@@ -1,0 +1,26 @@
+{
+    "leslie":
+{
+	"characterName": "Leslie Knope",
+	"playedBy": "Amy Poehler",
+	"jobTitle": "assistant manager",
+	"department": "parks and rec",
+	"bestFriend": "Ann Perkins"
+},
+"ron":
+{
+	"characterName": "Ron Swanson",
+	"playedBy": "Nick Offerman",
+	"jobTitle": "manager",
+	"department": "parks and rec",
+	"bestFriend": "bacon and eggs"
+},
+"ann":
+{
+	"characterName": "Ann Perkins",
+	"playedBy": "Rashida Jones",
+	"jobTitle": "nurse",
+	"department": "hospital",
+	"bestFriend": "Leslie Knope"
+}
+}
