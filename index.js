@@ -26,6 +26,30 @@ app.get("/characters/:name", function(req, res) {
 	console.log(name);
 });
 
+// query param passed in 
+
+app.get("/characters", (req, res) => {
+	let query = req.query;
+	console.log({ query });
+	let department = req.query.department;
+
+	fs.readFile("./characters.json", "utf8", (err, charactersData) => {
+		if (err) {
+			console.log(err);
+		}
+        let data = JSON.parse(charactersData);
+        
+		if (!department) {
+			res.json(data);
+		}
+		let character = data[department];
+		console.log({ character });
+		res.json(character);
+	});
+});
+
+// 
+
 app.listen(PORT, () => {
 	console.log(`I am listening on port ${PORT}`);
 });
